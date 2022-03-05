@@ -1,0 +1,12 @@
+﻿
+ @foreach (var student in Model)
+{
+    <div>
+    @student.ID
+    @student.Name
+    @student.Age
+    @student.Address
+    <img src= "/Images/@student.Image" style="width:100px;height:100px">
+    <a href ="http://localhost:29381/Student/stdentdetal/@student.ID">more detales</a>
+    </div>
+}
